@@ -74,5 +74,5 @@ for i in range(0, 117, 1):
 	model1_predict[i] = W1*model1_predict[i] + W2*model2_predict[i] + W3*model3_predict[i] + W4*model4_predict[i]
 print('\ntest loss: ', model1_predict)
 center= pd.DataFrame(model1_predict)
-center.to_csv(ros.path.join(csvpath, '517021910965predict.csv'),mode = 'a')
+center.to_csv(os.path.join(csvpath, '517021910965predict.csv'))
 
